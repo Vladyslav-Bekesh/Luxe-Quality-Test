@@ -1,16 +1,20 @@
+import { useEffect, useRef, useState } from 'react';
+import Map from './Map';
+import dots from '../data/dots.json';
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+  const mapBlockRef = useRef(null);
+  const [size, setSize] = useState({ width: 0, heigth: 0 });
+  
+  const showMapWidth = () => {
+    if (mapBlockRef.current) {
+      return mapBlockRef.current.getBoundingClientRect();
+    }
+  };
+
+  useEffect(() => {
+    setSize(showMapWidth());
+  }, []);
+
+  return <Map cords={dots} ref={mapBlockRef} size={size}/>;
 };
