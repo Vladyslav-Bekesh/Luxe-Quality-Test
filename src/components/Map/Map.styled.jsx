@@ -5,12 +5,14 @@ const MapContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+
   width: 100%;
   height: 100%;
 `;
 
 const MapSheet = styled.div`
-  margin: 0 auto;
+position: relative;
   width: 500px;
   height: 500px;
   background-image: url(${MapImage});
