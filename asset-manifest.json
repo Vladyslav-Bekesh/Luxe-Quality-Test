@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Luxe-Quality-Test/static/css/main.7acaea2f.css",
-    "main.js": "/Luxe-Quality-Test/static/js/main.07d3183d.js",
+    "main.css": "/Luxe-Quality-Test/static/css/main.a03acf59.css",
+    "main.js": "/Luxe-Quality-Test/static/js/main.403ce749.js",
+    "static/media/Map.png": "/Luxe-Quality-Test/static/media/Map.e5e46cea7b9a22598719.png",
     "index.html": "/Luxe-Quality-Test/index.html",
-    "main.7acaea2f.css.map": "/Luxe-Quality-Test/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/Luxe-Quality-Test/static/js/main.07d3183d.js.map"
+    "main.a03acf59.css.map": "/Luxe-Quality-Test/static/css/main.a03acf59.css.map",
+    "main.403ce749.js.map": "/Luxe-Quality-Test/static/js/main.403ce749.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.a03acf59.css",
+    "static/js/main.403ce749.js"
   ]
 }
