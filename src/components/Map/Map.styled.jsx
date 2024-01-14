@@ -5,18 +5,18 @@ const MapContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 
-  width: 100%;
+  background-color: gray;
   height: 100%;
 `;
 
 const MapSheet = styled.div`
-position: relative;
+  position: relative;
   width: 500px;
   height: 500px;
   background-image: url(${MapImage});
   background-size: cover;
+  border-radius: 50%;
 `;
 
 export { MapSheet, MapContainer };

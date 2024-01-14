@@ -1,14 +1,13 @@
 import React from 'react';
 import Dot from '../Dot';
-import { DotsList } from './Dots.styled';
 
-function Dots({ dots }) {
+function Dots({ dots, setSelected }) {
   return (
-    <DotsList>
-      {dots.map((dot,index) => {
-        return <Dot dot={dot} key={index} />;
-      })}
-    </DotsList>
+    <>
+      {dots.map((dot, index) => (
+        <Dot key={index} dot={dot} setSelected={setSelected} />
+      ))}
+    </>
   );
 }
 

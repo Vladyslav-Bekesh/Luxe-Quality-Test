@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect, useState } from 'react';
 import { MapSheet, MapContainer } from './Map.styled';
 import Dots from 'components/Dots/Dots';
 
-const Map = forwardRef(({ dots }, ref) => {
+const Map = forwardRef(({ dots, setSelected }, ref) => {
   const defSize = {
     bottom: 0,
     top: 0,
@@ -21,15 +21,14 @@ const Map = forwardRef(({ dots }, ref) => {
       setSizes(ref.current.getBoundingClientRect());
     }
   }, [ref]);
+  console.log(sizes);
 
   return (
-    <>
-      <MapContainer ref={ref}>
-        <MapSheet>
-          <Dots dots={dots} />
-        </MapSheet>
-      </MapContainer>
-    </>
+    <MapContainer ref={ref}>
+      <MapSheet>
+        <Dots dots={dots} setSelected={setSelected} />
+      </MapSheet>
+    </MapContainer>
   );
 });
 
